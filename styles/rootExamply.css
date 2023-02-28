@@ -1,0 +1,37 @@
+/* ~~ Root Example use ~~
+
+I maid this to sugest you to declare repeted values
+ as CSS variables.
+They should be declared under the :root selector with
+ '--' in front of
+variable name like below:
+*/
+
+:root {
+    --dark-background: #1f2937;
+    --grey-background: #E5E7EB;
+    --button-blue: #3882F6;
+    --hero-main-font: 48px extra-bold;
+    --hero-main-color: #f9faf8;
+    --hero-secundary-size: 18px;
+    --hero-secundary-color: #E5E7Eb;
+    --hero-logo-size: 24px;
+    --hero-logo-color: #F9FaF8;
+}
+
+/* Example usage
+ property: var(variableName)
+*/
+div {
+    background-color: var(--dark-background);
+    font: var(--hero-main-font);
+    color: var(--hero-main-color)
+}
+
+button {
+    background-color: var(--button-blue);
+    font-size: var(--hero-secundary-size);
+    color: var(--hero-secundary-color)
+}
+
+

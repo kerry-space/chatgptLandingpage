@@ -92,3 +92,18 @@ header button {
     text-align: center;
 }
 
+blockquote {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    text-align: center;
+    padding: 5%;
+    margin-top: 5%;
+}

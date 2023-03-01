@@ -37,6 +37,10 @@ header {
     background-color: #1F2937;
 }
 
+.head-img {
+    width: 50%;
+}
+
 header table {
     width: 100%;
     /* padding-left: 10%;

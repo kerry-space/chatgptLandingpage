@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #1f2937;
+    --secundary-color: #E5E7EB;
+    --button-color: #3882f6;
+    --h1-text: 36px extra-bold;
+    --logo-size: 24px;
+    --logo-color: #f6faf8;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.flex-container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--primary-color);
+}

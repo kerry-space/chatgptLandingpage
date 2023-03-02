@@ -139,40 +139,6 @@ header {
   text-align: center;
 }
  
-/* Style for qoute and footer */
 
-.quotation-container {
-  font-family:'Roboto', sans-serif;
-  background-color: #E5E7EB;
-  text-align: center;
-  padding: 70px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-blockquote {
-  width: 50%;
-  background-color: #E5E7EB;
-  text-align: center;
-  background-color: #E5E7EB;
-  font-size: 36px;
-  font-weight: 300;
-  font-style: italic;
-  color: #1F2937;
-  text-align: center;
-}
-cite {
-  display: block;
-  color: #1F2937;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: end;
-}
-footer {
-  background-color: #1F2937;
-  font-size: 14px;
-  color: #E5E7EB;
-  padding: 25px 0;
-  text-align: center;
-}
+
 

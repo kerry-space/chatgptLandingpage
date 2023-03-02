@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Roboto";
     src: url(../Roboto/Roboto-Black.ttf) format('truetype');
+    src: url(../Roboto/Roboto-Italic.ttf) format('light');
 }
 
 body {
@@ -92,7 +93,7 @@ header button {
     text-align: center;
 }
 
-blockquote {
+/* blockquote {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -106,4 +107,46 @@ blockquote {
     text-align: center;
     padding: 5%;
     margin-top: 5%;
+} */
+/* Style for qoute and footer */
+
+
+.quotation-container {
+    font-family:'Roboto', sans-serif;
+    background-color: #E5E7EB;
+    text-align: center;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+blockquote {
+    width: 50%;
+    background-color: #E5E7EB;
+    text-align: center;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    text-align: center;
+}
+cite {
+    display: block;
+    color: #1F2937;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: end;
+  }
+footer {
+    background-color: #1F2937;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #E5E7EB;
+    padding: 25px 0;
+    text-align: center;
+  }
+  
+  

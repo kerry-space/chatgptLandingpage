@@ -53,4 +53,101 @@ header {
     border-radius: 15px;
     text-shadow: none;
   }
+<<<<<<< HEAD:style.css
+
+
+
+  /*====================================================================================
+=           Usage page         =
+=============================================*/
+
+
+/*=============================================
+=            Section  header-container        =
+=============================================*/
+.header-container{
+
+}
+
+
+.header-container > img{
+  width: 100%;
+  height: auto;
+}
+
+/*=============================================
+=            Section  Usage-desc-container   =
+=============================================*/
+
+.usage-desc-container{
+  display: block;
+  margin: 100px;
+  text-align: center;
   
+}
+
+.usage-desc-container > h2{
+  
+}
+
+
+/*=============================================
+=            Section  start-continer   =
+=============================================*/
+.start-continer{
+  display: flex;
+  justify-content:space-between;
+  padding: 80px;
+  background-color:#000000 ;
+  color: white;
+  
+  gap: 50px ;
+  flex-flow: row wrap;
+
+}
+
+.start-continer > p{
+ flex-wrap: wrap;
+  
+  
+ 
+}
+
+/*=============================================
+=            Section  start-resource-continer  =
+=============================================*/
+.subtitle{
+  text-align: center;
+ 
+}
+.start-resource-continer{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+.start-resource-continer > figure{
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: 10px;
+  max-width: 220px;
+  margin: auto;
+ 
+}
+
+.start-resource-continer > img{
+  max-width: 220px;
+  max-height: 150px;
+}
+.start-resource-continer > figcaption{
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+=======
+  
+>>>>>>> 77f79d19ec17e6d28cd5ed86c402aecaf5688418:styles/style.css

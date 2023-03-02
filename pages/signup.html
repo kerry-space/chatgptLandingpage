@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="../styles/signupStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,36 +28,39 @@
         <main>
             <h1>Log in</h1>
             <form action="login">
-                <div>
+                <div class="input">
                     <label for="Username">Username</label>
-                    <input type="text" placeholder="name123" id="Username" name="Username" required>
+                    <div class="instyle">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="name123" id="Username" name="Username" required>
+                    </div>    
                 </div>
-                <div>    
+                <div class="input">    
                     <label for="Password">Password</label>
-                    <input type="text" name="Password" id="Password" placeholder="qumPf8" required>
-                    <a href="/">Forgot password?</a>
+                    <div class="instyle">
+                        <i class="fa fa-key"></i>
+                        <input type="text" name="Password" id="Password" placeholder="qumPf8" required>
+                    </div>
+                    <a href="/" class="forgot">Forgot password?</a>
                 </div>    
-                <button type="submit">Sign up</button>
+                <button type="submit">LOG IN</button>
             </form>
             <hr>
             <section>
                 <h2>Or sign up using</h2>
-                <ul>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                </ul>
+                <div class="socialMediaIcons">
+                    <a href="/" class="google"><i class="fa fa-google"></i></a>
+                    <a href="/" class="github"><i class="fa fa-github"></i></a>
+                    <a href="/" class="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+                <h2>Or</h2>
+                <a href="/" class="forgot">Sign up</a>
             </section>
         </main>
-    </div>
+    
     <footer>
         <p>by Team ...</p>
     </footer>
+    </div>
 </body>
 </html>

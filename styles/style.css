@@ -53,9 +53,6 @@ header {
     border-radius: 15px;
     text-shadow: none;
   }
-<<<<<<< HEAD:style.css
-
-
 
   /*====================================================================================
 =           Usage page         =
@@ -65,9 +62,7 @@ header {
 /*=============================================
 =            Section  header-container        =
 =============================================*/
-.header-container{
 
-}
 
 
 .header-container > img{
@@ -85,11 +80,6 @@ header {
   text-align: center;
   
 }
-
-.usage-desc-container > h2{
-  
-}
-
 
 /*=============================================
 =            Section  start-continer   =
@@ -148,6 +138,41 @@ header {
   padding: 3px;
   text-align: center;
 }
-=======
-  
->>>>>>> 77f79d19ec17e6d28cd5ed86c402aecaf5688418:styles/style.css
+ 
+/* Style for qoute and footer */
+
+.quotation-container {
+  font-family:'Roboto', sans-serif;
+  background-color: #E5E7EB;
+  text-align: center;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+blockquote {
+  width: 50%;
+  background-color: #E5E7EB;
+  text-align: center;
+  background-color: #E5E7EB;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+  text-align: center;
+}
+cite {
+  display: block;
+  color: #1F2937;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: end;
+}
+footer {
+  background-color: #1F2937;
+  font-size: 14px;
+  color: #E5E7EB;
+  padding: 25px 0;
+  text-align: center;
+}
+

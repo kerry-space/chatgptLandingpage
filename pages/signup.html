@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta 
+        name="description"            
+        content="This page is login page for the blog at
+                https://kerry-space.github.io/chatgptLandingpage/"
+    >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="../styles/signupStyle.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,47 +23,78 @@
 </head>
 <body>
     <header>
-        <a href="/">ChatGPT Blog</a>
-        <nav>
-            <a href="/">About</a>
-            <a href="../about.html">Homepage</a>
-            <a href="/">Other link</a>
+        <h1>
+            <a href="../index.html">ChatGPT Blog</a>
+        </h1>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../index.html#about">About</a>
+                </li>
+                <li>    
+                    <a href="../pages/signup.html">Log in</a>
+                </li>
+                <li>    
+                    <a href="../pages/usage.html">Usage</a>
+                </li> 
+            </ul>
         </nav>
     </header>
     <div class="flex-container"> 
         <main>
             <h1>Log in</h1>
             <form action="login">
-                <div>
+                <div class="input">
                     <label for="Username">Username</label>
-                    <input type="text" placeholder="name123" id="Username" name="Username" required>
+                    <div class="instyle">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="name123" id="Username" name="Username" required>
+                    </div>    
                 </div>
-                <div>    
+                <div class="input">    
                     <label for="Password">Password</label>
-                    <input type="text" name="Password" id="Password" placeholder="qumPf8" required>
-                    <a href="/">Forgot password?</a>
+                    <div class="instyle">
+                        <i class="fa fa-key"></i>
+                        <input type="password" name="Password" id="Password" placeholder="qumPf8" required>
+                    </div>
+                    <a href="/" class="forgot">Forgot password?</a>
                 </div>    
-                <button type="submit">Sign up</button>
+                <button type="submit">LOG IN</button>
             </form>
             <hr>
             <section>
                 <h2>Or sign up using</h2>
-                <ul>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i></i></a>
-                    </li>
-                </ul>
+                <div class="socialMediaIcons">
+                    <a 
+                        href="https://myaccount.google.com/"
+                        title="google account"
+                        class="google"
+                    >
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a 
+                        href="https://github.com/"
+                        title="github account" 
+                        class="github"
+                    >
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/" 
+                        title="instagram account" 
+                        class="instagram"
+                    >
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <h2>Or</h2>
+                <a href="/" class="forgot">Sign up</a>
             </section>
         </main>
-    </div>
+    
     <footer>
-        <p>by Team ...</p>
+        <p>© Copyright 2015-2023 ChatGPT</p>
     </footer>
+    </div>
 </body>
 </html>

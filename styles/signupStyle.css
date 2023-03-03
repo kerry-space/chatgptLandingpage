@@ -2,18 +2,30 @@
     --primary-color: #1f2937;
     --secundary-color: #E5E7EB;
     --button-color: #3882f6;
-    --h1-text: 36px extra-bold;
+    --info-text: 36px extra-bold;
+    --h1-text: 48px extra-bold;
     --logo-size: 24px;
     --logo-color: #f6faf8;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
 }
 
+a:hover {
+    color: gray;
+}
+
+a:active {
+    transform: scale(0.95)
+}
+a {
+    transition: transform .5s;
+}
+
 .flex-container {
+    gap: 40px;
     height: 90vh;
     width: 100vw;
     display: flex;
@@ -22,10 +34,217 @@
     align-items: center;
 }
 
-header {
-    position: fixed;
+main {
+    z-index: 0;
+    animation: .25s ease-out 0s 1 slideInFromLeft;
+    margin-top: 40vh;
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 20px;
+    width: 30%;
+    background-color: var(--button-color);
+    border-radius: 25px;
+}
+
+h2 {
+    font: var(--info-text);
+    color: var(--secundary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 50%;
+    width: 90%;
+}
+.instyle {
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    align-items: center;
+    padding-left: 10px;
+    gap: 2.5px;
+    border-radius: 25px;
+    border-color: var(--secundary-color);
+}
+
+.instyle:focus-within {
+    border: 2px solid #171515;
+}
+i {
+    color: var(--secundary-color);
+}
+
+input {
+    color: var(--secundary-color);
+    border: none;
+    background-color: inherit;
+    width: 85%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input a {
+    width: 100%;
+    text-align: end;
+}
+
+label {
+    color: var(--secundary-color);
+    font-size: 18px;
+}
+
+.forgot {
+    color: var(--secundary-color);
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: var(--button-color);
+    border-radius: 25px;
+    border-color: var(--secundary-color);
+    color: var(--secundary-color);
+    cursor: pointer;
+    transition: transform .25s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.socialMediaIcons a {
+    font-size: var(--logo-size);
+    color: var(--button-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.socialMediaIcons a:hover {
+    transform: scale(1.10);
+
+}
+
+.socialMediaIcons a:active {
+    transform: scale(0.95);
+}
+
+.google {
+    background-color: #db4437;
+
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.github {
+    background-color: #171515;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--secundary-color);
     background-color: var(--primary-color);
+    width: 100vw;
+    padding: 10px 10px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+    main {
+        margin-top: 70vh;
+    }
+
+    header {
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    main{
+        width: 75vw;
+    }
+
+    header > a {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+    nav {
+        width: 90%;
+        justify-content: flex-end;
+        gap: 10px
+    }
+   
+}
+
+@media screen and (max-width: 320px){
+    nav a {
+        font-size: .9rem;
+    }
 }

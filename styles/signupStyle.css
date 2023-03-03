@@ -37,7 +37,7 @@ a {
 main {
     z-index: 0;
     animation: .25s ease-out 0s 1 slideInFromLeft;
-    margin-top: 40vh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

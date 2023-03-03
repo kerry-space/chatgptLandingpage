@@ -85,11 +85,11 @@ header button {
     width: 45%;
 }
 
-.info-content-child p{
+.info-content-child figcaption{
     font-size: 18px;
     color: #a5bceb;
-    width: 40%;
-    text-align: center;
+    /* width: 40%; */
+    /* text-align: center; */
 }
 
 blockquote {

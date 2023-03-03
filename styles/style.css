@@ -20,7 +20,7 @@ header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
@@ -42,7 +42,7 @@ header h1 {
 header a {
   text-decoration: none;
   color: var(--primary-color);
-  transition: transform .5s;
+  transition: color .5s;
 }
 
 header nav {

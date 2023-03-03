@@ -9,7 +9,6 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
 }
@@ -47,11 +46,6 @@ main {
     width: 30%;
     background-color: var(--button-color);
     border-radius: 25px;
-}
-
-h1 {
-    font: var(--h1-text);
-    color: var(--secundary-color);
 }
 
 h2 {

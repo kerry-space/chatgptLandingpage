@@ -28,15 +28,13 @@ header {
   z-index: 9999;
 }
   
-/* header h1 {
-  font-size: 24px;
+header h1 {
   margin: 0;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
+}
 
 header a {
-  /* padding: 0px 25px; */
   text-decoration: none;
   color: var(--primary-color);
   transition: color .5s;
@@ -82,6 +80,10 @@ section {
   flex-wrap: wrap;
   align-items: flex-start;
   background-color: var(--tertiary-color);
+  padding-top: 8px;
+  padding-right: 30px;
+  padding-bottom: 38px;
+  padding-left: 30px;
 }
 
 .hero-cta {
@@ -94,7 +96,7 @@ section {
 }
 
 .hero-cta h2 {
-  font-style: bold;
+  font-weight: 600;
   font-size: 48px;
   color: var(--primary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -115,10 +117,34 @@ section {
 
 .hero-img-2 {
   width: 450px;
-  height: 260px;
+  height: 262px;
   padding: 2px 2px;
   
 }
+
+.btn {
+  background-color: #3882F6;
+  border-color: #3882F6;
+  text-decoration: none;
+  color: #F9FAF8;
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 15px;
+  width: 100px;
+  transition: color .5s;
+}
+
+.btn:hover{
+  background:var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  border-color: #F9FAF8;
+  text-shadow: none;
+}
+
   /*====================================================================================
 =           Usage page         =
 =============================================*/

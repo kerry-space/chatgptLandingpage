@@ -55,8 +55,7 @@ a {
 
 .flex-container {
     gap: 40px;
-    height: 90vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +65,7 @@ a {
 main {
     z-index: 0;
     animation: .25s ease-out 0s 1 slideInFromLeft;
-    margin-top: 20vh;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -109,16 +108,16 @@ i {
 }
 
 input {
-   
+
     border: none;
     background-color: inherit;
     width: 85%;
     height: 2rem;
     font-size: 1rem;
-    
-    
+
+
 }
- 
+
 input::placeholder{
     color: rgba(249, 250, 249, 0.4);
     padding: 10px;
@@ -249,7 +248,8 @@ footer {
 
 @media screen and (max-width: 768px){
     main {
-        margin-top: 70vh;
+        margin-top: 50px;
+        margin-bottom: 50px;    
     }
 
     header {

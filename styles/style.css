@@ -40,6 +40,17 @@ header a {
   font-size: 24px;
 }
 
+a:hover {
+  color: #5C9CFB;
+}
+
+a:active {
+  transform: scale(0.95)
+}
+a {
+  transition: transform .5s;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;

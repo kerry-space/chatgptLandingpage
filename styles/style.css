@@ -8,7 +8,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 body {
@@ -111,8 +110,6 @@ section {
   display: flex;
   position: relative;
   margin: 3.5%;
-  /* width: 150px;
-  height: 150px; */
 }
 
 .hero-img-2 {

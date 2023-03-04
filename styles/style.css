@@ -42,8 +42,23 @@ header a {
   
 }
 
+.figs {
+  text-decoration: none;
+    color: var(--secondary-color);
+    transition: color .5s;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+
+
 a:hover {
   color: #5C9CFB;
+}
+
+.figs:hover {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
 }
 
 a:active {

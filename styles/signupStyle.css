@@ -269,24 +269,7 @@ footer {
 @media screen and (max-width: 425px){
     main{
         width: 75vw;
-    }
-
-    header > a {
-        font-size: 14px;
-    }
-
-    header {
-        flex-direction: column;
-    }
-    nav {
-        width: 90%;
-        justify-content: flex-end;
-        gap: 10px
-    }
+}
 }
 
-@media screen and (max-width: 320px){
-    nav a {
-        font-size: .9rem;
-    }
-}
+

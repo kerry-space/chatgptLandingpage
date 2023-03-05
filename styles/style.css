@@ -422,3 +422,30 @@ footer {
     text-shadow: 0 0 10px rgb(0 0 0)
   }
 }
+
+@media screen and (max-width: 425px) {
+  .more-width {
+    width: 90vw;
+    align-self: center;
+  }
+
+  .usage-desc-container p {
+    padding: 5%;
+  }
+
+    .start-resource-continer > figure{
+      width: 90%;
+    }
+
+    .start-resource-continer > figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+}

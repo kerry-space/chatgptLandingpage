@@ -12,7 +12,7 @@
 
 body {
   color: var(--tertiary-color);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -38,10 +38,27 @@ header a {
   color: var(--primary-color);
   transition: color .5s;
   font-size: 24px;
+ 
+  
 }
+
+.figs {
+  text-decoration: none;
+    color: var(--secondary-color);
+    transition: color .5s;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+
 
 a:hover {
   color: #5C9CFB;
+}
+
+.figs:hover {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
 }
 
 a:active {
@@ -68,6 +85,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 25px;
   font-weight: lighter;
+  font-weight: normal;
   font-size: 18px;
   color: #E5E7EB;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -87,7 +105,7 @@ section {
 .hero {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: flex-start;
   background-color: var(--tertiary-color);
   padding-top: 8px;
@@ -97,7 +115,7 @@ section {
 }
 
 .hero-cta {
-  width: 35%;
+  width: 60%;
   text-align: left;
   margin: 3.5%;
   color: var(--primary-color);
@@ -117,15 +135,18 @@ section {
   color: #E5E7EB;
 }
 
-.hero-img {
+.hero-img-container {
   display: flex;
-  position: relative;
+  align-items: center;
+  justify-content: center;
   margin: 3.5%;
+  width: 50%;
 }
 
-.hero-img-2 {
-  width: 450px;
-  height: 262px;
+.hero-img {
+  /* width: 450px;
+  height: 262px; */
+  width: 100%;
   padding: 2px 2px;
   
 }
@@ -173,11 +194,22 @@ section {
 =            Section  Usage-desc-container   =
 =============================================*/
 
-.usage-desc-container{
+.usage-desc-container {
   display: block;
-  margin: 100px;
-  text-align: center;
+  padding-top:0px;
+  padding: 50px 0px;
   
+  text-align: center;
+}
+
+.usage-desc-container h2{
+  padding-bottom: 20px;
+}
+
+.usage-desc-container p{
+  padding: 40px 100px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*=============================================
@@ -187,6 +219,7 @@ section {
   display: flex;
   justify-content:space-between;
   padding: 80px;
+  margin: 40px;
   background-color:#000000 ;
   color: white;
   
@@ -197,6 +230,7 @@ section {
 
 .start-continer > p{
  flex-wrap: wrap;
+ font-family: 'Roboto', sans-serif;
   
   
  
@@ -212,51 +246,53 @@ section {
 .start-resource-continer{
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   text-align: center;
+  justify-content: center;
+  
   
 }
 .start-resource-continer > figure{
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  margin: 10px;
-  max-width: 220px;
-  margin: auto;
- 
+  
+
+  width: 10%;
+  background-color: #f8f8f8;
+  padding: .5em;
+  border: 1px solid #ccc;
+  margin: 0 .5em;
+  border-radius: 25px;
+
 }
 
-.start-resource-continer > img{
-  max-width: 220px;
-  max-height: 150px;
+.start-resource-continer img{
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  
 }
-.start-resource-continer > figcaption{
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-}
- 
+
+
+
 /* Style for qoute and footer */
 
 .quotation-container {
   font-family:'Roboto', sans-serif;
+  font-weight: 100;
   background-color: #E5E7EB;
   text-align: center;
-  padding: 70px 0;
+  padding: 110px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 blockquote {
   width: 50%;
-  background-color: #E5E7EB;
-  text-align: center;
-  background-color: #E5E7EB;
   font-size: 36px;
   font-weight: 300;
-  font-style: italic;
+  font-style: italic; 
   color: #1F2937;
   text-align: center;
 }
@@ -270,8 +306,165 @@ cite {
 footer {
   background-color: var(--tertiary-color);
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   color: #E5E7EB;
   padding: 25px 0;
   text-align: center;
+
+}
+
+.login-req {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #3882F6;
+  border-radius: 15px;
+}
+
+.login-req h3{
+  color: #F9FAF8;
+}
+
+.login-req p {
+  color: #F9FAF8;
+}
+
+.animated {
+  animation: .25s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 925px){
+  .hero{
+    flex-direction: column;
+  
+  }
+  .hero-cta{
+      width: 100%;
+      text-align: center;
+      
+  }
+
+  .hero{
+    flex-direction: column;
+    align-items: center
+    ;
+  }
+
+  .hero-cta p{
+    margin: 30px;
+  }
+  header {
+    padding: 20px 20px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  header nav ul li a {
+    padding: 10px 7px;
+    font-weight: lighter;
+    font-weight: normal;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-shadow: 0 0 10px rgb(0 0 0)
+  }
+  .login-req {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 780px){
+  header {
+    padding: 20px 20px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  header nav ul li a {
+    padding: 10px 7px;
+    font-weight: lighter;
+    font-weight: normal;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-shadow: 0 0 10px rgb(0 0 0)
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .more-width {
+    width: 90%;
+    align-self: center;
+  }
+
+  .usage-desc-container p {
+    padding: 5%;
+  }
+
+    .start-resource-continer > figure{
+      width: 90%;
+    }
+
+    .start-resource-continer > figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+}
+
+
+
+@media screen and (min-width: 500px) {
+  .start-resource-continer > figure {
+    width: 20%;
+    margin: 5px 0;
+    border-radius: 15px;
+  }
+  .start-resource-continer figcaption {
+    font-size: 1em;
+    overflow-wrap: break-word; /* or overflow-wrap: normal; */
+  }
 }
 

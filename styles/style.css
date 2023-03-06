@@ -246,32 +246,36 @@ section {
 .start-resource-continer{
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   text-align: center;
+  justify-content: center;
+  
   
 }
 .start-resource-continer > figure{
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  margin: 10px;
-  max-width: 220px;
-  margin: auto;
- 
+  
+
+  width: 10%;
+  background-color: #f8f8f8;
+  padding: .5em;
+  border: 1px solid #ccc;
+  margin: 0 .5em;
+  border-radius: 25px;
+
 }
 
-.start-resource-continer > img{
-  max-width: 220px;
-  max-height: 150px;
+.start-resource-continer img{
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  
 }
-.start-resource-continer > figcaption{
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-}
- 
+
+
+
 /* Style for qoute and footer */
 
 .quotation-container {
@@ -423,9 +427,9 @@ footer {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .more-width {
-    width: 90vw;
+    width: 90%;
     align-self: center;
   }
 
@@ -449,3 +453,18 @@ footer {
 
  
 }
+
+
+
+@media screen and (min-width: 500px) {
+  .start-resource-continer > figure {
+    width: 20%;
+    margin: 5px 0;
+    border-radius: 15px;
+  }
+  .start-resource-continer figcaption {
+    font-size: 1em;
+    overflow-wrap: break-word; /* or overflow-wrap: normal; */
+  }
+}
+

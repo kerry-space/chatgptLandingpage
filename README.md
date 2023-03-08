@@ -78,6 +78,11 @@ Using github to store our code in repsotiory
 * Best pratice <br> has to do with how it carry out a task or configure.
 * SEO <br> Optimise for search engine, to improve traffic visit to website
 
+<picture>
+ <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+ <img alt="YOUR-ALT-TEXT" src="images/lighhousePER.png">
+</picture>
+
 <br>
 <br>
 
